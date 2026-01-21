@@ -1,0 +1,38 @@
+PASSOS PARA A CRIAÇÃO DA LOGO:
+
+
+1. Preparação do Documento
+Abre o GIMP e cria um novo ficheiro (Ficheiro > Novo). Um tamanho de 1920x1080 ou similar é ideal para ter boa resolução.
+
+Preenche o fundo com um cinza claro ou a cor que preferires para destacar o branco.
+
+2. Criar o Texto
+Seleciona a Ferramenta de Texto (T).
+
+Escreve DWDM em maiúsculas.
+
+Ajusta o tamanho para que ocupe grande parte da tela e coloca a cor em Preto.
+
+3. Criar a Moldura Branca (O "Badge")
+Na aba de camadas (à direita), clica com o botão direito na camada de texto e escolhe "Alfa para a Seleção". Verás as "formiguinhas" a marchar à volta das letras.
+
+Vai ao menu Selecionar > Aumentar...
+
+Escolhe um valor entre 30 a 60 píxeis para criar a borda branca.
+
+Cria uma Nova Camada e coloca-a abaixo da camada do texto.
+
+Seleciona a Ferramenta de Preenchimento (Balde), escolhe a cor Branca e clica dentro da seleção na nova camada.
+
+4. Adicionar a Sombra (Efeito Drop Shadow)
+Seleciona a camada "Fundo Branco".
+
+Vai a Filtros > Luz e Sombra > Sombra Projetada (Drop Shadow).
+
+Ajusta os valores:
+
+X e Y: 5 a 10 (para a sombra descer um pouco).
+
+Raio de Desfoque (Blur Radius): 15 a 30 (para ficar suave).
+
+Opacidade: Ajusta ao teu gosto para não ficar demasiado escuro.

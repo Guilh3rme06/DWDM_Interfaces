@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site com material de estudo organizado por Apresentaçãos e exercícios">
+    <title>DWDM IPLuso</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/translation.css">
+    <script src="public/js/translator.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" title="Pular para o conteúdo principal" data-i18n="skipLink">Pular para o conteúdo principal</a>
+    
+    <header role="banner">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link" title="Ir para a home">
+                    <img src="public/img/DWDM_claro.webp" alt="DWDM" class="logo-image logo-claro" width="240" height="120" />
+                    <img src="public/img/DWDM_escuro.webp" alt="DWDM" class="logo-image logo-escuro" width="240" height="120" />
+                </a>
+            </div>
+            <button class="hamburger-btn" aria-label="Menu" aria-expanded="false" title="Abrir/fechar menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav role="navigation" aria-label="Menu principal" class="main-nav">
+                <ul>
+                    <li><a href="../index.html" title="Início" data-i18n="navHome">Início</a></li>
+                    <li><a href="#materias" title="Matérias" data-i18n="navSubjects">Matérias</a></li>
+                    <li><a href="public/html/about.html" title="Sobre Nós" data-i18n="navAbout">Sobre Nós</a></li>
+                </ul>
+                <div class="mobile-controls">
+                    <div class="header-actions" id="header-actions-mobile">
+                        <button class="modo-noturno" aria-label="Alternar modo noturno" title="Alternar modo noturno">🌙 Modo Noturno</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-actions desktop-only" id="header-actions-desktop">
+                <button class="modo-noturno" aria-label="Alternar modo noturno" title="Alternar modo noturno">🌙 Modo Noturno</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main" tabindex="-1">
+        <section class="hero">
+            <h1 data-i18n="heroTitle">Design De Interface</h1>
+            <p data-i18n="heroDesc1">Este site tem o objetivo de organizar material de estudo realizado nas aulas de Design De Interface na IPLuso, criando um site super acessível para todos.</p>
+            <p data-i18n="heroDesc2">Tem também uma seção para que possam transferir as nossas apresentações para ajudar nos estudos.</p>
+            <div class="accessibility-controls">
+                <button class="btn-font-plus" aria-label="Aumentar fonte" title="Aumentar Texto">A+</button>
+                <button class="btn-font-minus" aria-label="Diminuir fonte" title="Diminuir Texto">A-</button>
+                <button class="btn-dyslexic" aria-label="Ativar modo dislexia" title="Modo Dislexia (OpenDyslexic)">Aa</button>
+            </div>
+        </section>
+
+        <section class="materias" id="materias" aria-labelledby="titulo-materias">
+            <h2 id="titulo-materias" data-i18n="sectionTitle">Design De Interface</h2>
+            <div class="cards-container" role="list">
+                <article class="card" role="listitem" tabindex="0">
+                    <h3 data-i18n="card1Title">Apresentação 01</h3>
+                    <p data-i18n="card1Desc">Nesta parte abordamos os princípios Fundamentais do design de interfaces</p>
+                    <a href="public/html/ex1.html" class="btn-download" aria-label="Baixar resumo do Exercício 1">
+                        <span class="download-icon">⬇</span><span data-i18n="btnLearnMore">Saber mais</span>
+                    </a>
+                </article>
+                <article class="card" role="listitem" tabindex="0">
+                    <h3 data-i18n="card2Title">Apresentação 02</h3>
+                    <p data-i18n="card2Desc">Conteúdo focado nos Principios de Composição Visual e nas Grids/Malhas</p>
+                    <a href="public/html/ex2.html" class="btn-download" aria-label="Baixar resumo do Exercício 2">
+                        <span class="download-icon">⬇</span><span data-i18n="btnLearnMore">Saber mais</span>
+                    </a>
+                </article>
+                <article class="card" role="listitem" tabindex="0">
+                    <h3 data-i18n="card3Title">Apresentação 03</h3>
+                    <p data-i18n="card3Desc">Conteúdo focado nos formatos de imagem, cores e imagems</p>
+                    <a href="public/html/ex3.html" class="btn-download" aria-label="Baixar resumo do Exercício 3">
+                        <span class="download-icon">⬇</span><span data-i18n="btnLearnMore">Saber mais</span>
+                    </a>
+                </article>
+                <article class="card" role="listitem" tabindex="0">
+                    <h3 data-i18n="card4Title">Apresentação 04</h3>
+                    <p data-i18n="card4Desc">Conteúdo focado no espaço negativo, minimalismo e equilíbrio do conteúdo</p>
+                    <a href="public/html/ex4.html" class="btn-download" aria-label="Baixar resumo do Exercício 4">
+                        <span class="download-icon">⬇</span><span data-i18n="btnLearnMore">Saber mais</span>
+                    </a>
+                </article>
+                <article class="card" role="listitem" tabindex="0">
+                    <h3 data-i18n="card5Title">Apresentação 05</h3>
+                    <p data-i18n="card5Desc">Conteúdo focado nas tendências visuais, neomorfismo, brutalismo e glassmorfismo</p>
+                    <a href="public/html/ex5.html" class="btn-download" aria-label="Baixar resumo do Exercício 5">
+                        <span class="download-icon">⬇</span><span data-i18n="btnLearnMore">Saber mais</span>
+                    </a>
+                </article>
+                <article class="card" role="listitem" tabindex="0">
+                    <h3 data-i18n="card6Title">Apresentação 06</h3>
+                    <p data-i18n="card6Desc">Conteúdo focado nos Padrões de acessibilidade, divisão das diretrizes e design Inclusivo</p>
+                    <a href="public/html/ex6.html" class="btn-download" aria-label="Baixar resumo do Exercício 6">
+                        <span class="download-icon">⬇</span><span data-i18n="btnLearnMore">Saber mais</span>
+                    </a>
+                </article>
+                <article class="card" role="listitem" tabindex="0">
+                    <h3 data-i18n="card7Title">Apresentação 07 - GIMP</h3>
+                    <p data-i18n="card7Desc">Tutorial e material médio/avançado sobre edição de imagens com GIMP</p>
+                    <a href="public/html/gimp.html" class="btn-download" aria-label="Baixar resumo sobre GIMP">
+                        <span class="download-icon">⬇</span><span data-i18n="btnLearnMore">Saber mais</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p><span data-i18n="footerContact">Contato</span>: <a href="mailto:a22405041@mso365.ipluso.pt">Guilherme Rodrigues</a></p>
+        <p><a href="public/html/acessibilidade.html" title="Acessibilidade" data-i18n="footerAccessibility">Declaração de Acessibilidade</a></p>
+    </footer>
+
+    <script src="public/js/accessibility.js"></script>
+    <script src="public/js/auto-translator.js"></script>
+</body>
+</html>
