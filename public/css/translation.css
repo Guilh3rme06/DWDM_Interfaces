@@ -1,0 +1,100 @@
+/* Estilos para o seletor de idioma na navbar */
+.language-selector {
+    padding: 8px 28px 8px 12px;
+    border: 2px solid #D1D1D1;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    font-weight: 500;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231A1A1A' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.language-selector:hover {
+    background-color: #F5F5F5;
+    border-color: #0052CC;
+    transform: translateY(-1px);
+}
+
+.language-selector:focus {
+    outline: 2px solid #0052CC;
+    outline-offset: 2px;
+}
+
+/* Modo noturno - seletor de idioma */
+body.modo-noturno-ativo .language-selector {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border-color: #404040;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23E0E0E0' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+}
+
+body.modo-noturno-ativo .language-selector:hover {
+    background-color: #2A2A2A;
+    border-color: #0088DD;
+    transform: translateY(-1px);
+}
+
+body.modo-noturno-ativo .language-selector:focus {
+    outline: 2px solid #0088DD;
+    box-shadow: 0 0 0 3px rgba(0, 136, 221, 0.2);
+}
+
+/* Estilo das opções do select */
+.language-selector option {
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+}
+
+body.modo-noturno-ativo .language-selector option {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .language-selector {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+        margin-right: 0.5rem;
+        width: 100%;
+        border: 1px solid #D1D1D1;
+        margin-bottom: 0.5rem;
+    }
+    
+    #header-actions-mobile .language-selector {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    body.modo-noturno-ativo #header-actions-mobile .language-selector {
+        border-color: #404040;
+    }
+}
+
+@media (max-width: 480px) {
+    .language-selector {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8rem;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    #header-actions-mobile .language-selector {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+}

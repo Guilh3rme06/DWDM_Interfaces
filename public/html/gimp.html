@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorial de GIMP - Design de Interface">
+    <title>Tutorial de GIMP - Design de Interface</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/translation.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipLink">Pular para o conteúdo principal</a>
+    
+   <header role="banner">
+        <div class="header-container">
+            <div class="logo">
+                <a href="../../index.html" class="logo-link" title="Ir para a home">
+                    <img src="../img/DWDM_claro.webp" alt="DWDM" class="logo-image logo-claro" />
+                    <img src="../img/DWDM_escuro.webp" alt="DWDM" class="logo-image logo-escuro" />
+                </a>
+            </div>
+            <button class="hamburger-btn" aria-label="Menu" aria-expanded="false" title="Abrir/fechar menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav role="navigation" aria-label="Menu principal" class="main-nav">
+                <ul>
+                    <li><a href="../../index.html" title="Início" data-i18n="navHome">Início</a></li>
+                    <li><a href="../../index.html#materias" title="Matérias" data-i18n="navSubjects">Matérias</a></li>
+                    <li><a href="about.html" title="Sobre Nós" data-i18n="navAbout">Sobre Nós</a></li>
+                </ul>
+                <div class="mobile-controls">
+                    <div class="header-actions" id="header-actions-mobile">
+                        <button class="modo-noturno" aria-label="Alternar modo noturno" title="Alternar modo noturno">🌙 Modo Noturno</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-actions desktop-only" id="header-actions-desktop">
+                <button class="modo-noturno" aria-label="Alternar modo noturno" title="Alternar modo noturno">🌙 Modo Noturno</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main" tabindex="-1">
+        <section class="conteudo">
+            <div class="conteudo-header">
+                <h1 data-i18n="gimpTitle">GIMP - Edição de Imagens</h1>
+                <div class="conteudo-buttons-right">
+                    <a href="../pdf/GIMP.zip" download class="btn-download-pdf" aria-label="Baixar PDF da apresentação">
+                        <span>⬇</span> <span data-i18n="btnDownloadPdf">Baixar PDF</span>
+                    </a>
+                    <button class="btn-audio" id="audioBtn" aria-label="Ler página em áudio" title="Ler página em áudio">
+                        <span>🔊</span> <span data-i18n="btnAudio">Ler em Áudio</span>
+                    </button>
+                </div>
+            </div>
+
+            <article>
+                <h2 data-i18n="gimpWhatIs">O Que é GIMP?</h2>
+                <p data-i18n="gimpWhatIsDesc"><strong>GIMP</strong> (GNU Image Manipulation Program) é um programa de edição de imagens de código aberto e gratuito. É uma alternativa poderosa ao Adobe Photoshop, oferecendo ferramentas profissionais para manipulação de imagens, design gráfico, retoque fotográfico e muito mais.</p>
+
+                <h3 data-i18n="gimpMainFeatures">Características Principais</h3>
+                <ul>
+                    <li><strong data-i18n="gimpFreeOpenSource">Gratuito e Open Source:</strong> <span data-i18n="gimpFreeOpenSourceDesc">Software livre disponível para Windows, macOS e Linux</span></li>
+                    <li><strong data-i18n="gimpProfessionalTools">Ferramentas Profissionais:</strong> <span data-i18n="gimpProfessionalToolsDesc">Seleção, pintura, clonagem, máscaras, camadas e muito mais</span></li>
+                    <li><strong data-i18n="gimpMultiFormat">Suporte a Múltiplos Formatos:</strong> <span data-i18n="gimpMultiFormatDesc">JPG, PNG, GIF, TIFF, PSD e outros</span></li>
+                    <li><strong data-i18n="gimpExtensible">Extensível:</strong> <span data-i18n="gimpExtensibleDesc">Suporta plugins e scripts para expandir funcionalidades</span></li>
+                    <li><strong data-i18n="gimpCustomizable">Customizável:</strong> <span data-i18n="gimpCustomizableDesc">Interface configurável adaptada às suas necessidades</span></li>
+                </ul>
+
+                <h2 data-i18n="gimpInterface">Interface do GIMP</h2>
+                <p data-i18n="gimpInterfaceDesc">A interface do GIMP é organizada em várias áreas principais:</p>
+
+                <h3 data-i18n="gimpInterfaceComponents">Componentes da Interface</h3>
+                <ul>
+                    <li><strong data-i18n="gimpToolbox">Caixa de Ferramentas:</strong> <span data-i18n="gimpToolboxDesc">Localizada à esquerda, contém todas as ferramentas de edição</span></li>
+                    <li><strong data-i18n="gimpWorkingArea">Área de Trabalho Central:</strong> <span data-i18n="gimpWorkingAreaDesc">Onde a imagem é exibida e editada</span></li>
+                    <li><strong data-i18n="gimpLayerPanel">Painel de Camadas:</strong> <span data-i18n="gimpLayerPanelDesc">À direita, gerencia as camadas da imagem</span></li>
+                    <li><strong data-i18n="gimpOptionsPanel">Painel de Opções:</strong> <span data-i18n="gimpOptionsPanelDesc">Abaixo da caixa de ferramentas, mostra opções da ferramenta selecionada</span></li>
+                    <li><strong data-i18n="gimpMenuBar">Barra de Menus:</strong> <span data-i18n="gimpMenuBarDesc">Acesso a todas as funcionalidades do programa</span></li>
+                </ul>
+
+                <h2 data-i18n="gimpTools">Ferramentas Essenciais</h2>
+
+                <h3 data-i18n="gimpSelectionTools">Ferramentas de Seleção</h3>
+                <ul>
+                    <li><strong data-i18n="gimpRectSelect">Seleção Retangular:</strong> <span data-i18n="gimpRectSelectDesc">Cria seleções em forma de retângulo</span></li>
+                    <li><strong data-i18n="gimpEllipseSelect">Seleção Elíptica:</strong> <span data-i18n="gimpEllipseSelectDesc">Cria seleções circulares ou ovais</span></li>
+                    <li><strong data-i18n="gimpFreeSelect">Seleção Livre (Laço):</strong> <span data-i18n="gimpFreeSelectDesc">Desenha seleções à mão livre</span></li>
+                    <li><strong data-i18n="gimpFuzzySelect">Seleção Inteligente (Fuzzy):</strong> <span data-i18n="gimpFuzzySelectDesc">Seleciona áreas por cor</span></li>
+                    <li><strong data-i18n="gimpScissors">Tesoura Inteligente:</strong> <span data-i18n="gimpScissorsDesc">Detecta bordas para seleção precisa</span></li>
+                    <li><strong data-i18n="gimpSelectByColor">Seleção por Cor:</strong> <span data-i18n="gimpSelectByColorDesc">Seleciona todas as áreas de cor semelhante</span></li>
+                </ul>
+
+                <h3 data-i18n="gimpPaintingTools">Ferramentas de Pintura</h3>
+                <ul>
+                    <li><strong data-i18n="gimpBrush">Pincel:</strong> <span data-i18n="gimpBrushDesc">Para pintar com cores suaves</span></li>
+                    <li><strong data-i18n="gimpPencil">Lápis:</strong> <span data-i18n="gimpPencilDesc">Para traços mais duros e definidos</span></li>
+                    <li><strong data-i18n="gimpAirbrush">Aerógrafo:</strong> <span data-i18n="gimpAirbrushDesc">Simula pintura com spray</span></li>
+                    <li><strong data-i18n="gimpInkPen">Caneta de Tinta:</strong> <span data-i18n="gimpInkPenDesc">Cria traços caligráficos</span></li>
+                    <li><strong data-i18n="gimpBucketFill">Preenchimento (Balde):</strong> <span data-i18n="gimpBucketFillDesc">Preenche áreas com cor sólida ou padrão</span></li>
+                    <li><strong data-i18n="gimpGradient">Gradiente:</strong> <span data-i18n="gimpGradientDesc">Cria transições suaves entre cores</span></li>
+                </ul>
+
+                <h3 data-i18n="gimpTransformTools">Ferramentas de Transformação</h3>
+                <ul>
+                    <li><strong data-i18n="gimpMove">Mover:</strong> <span data-i18n="gimpMoveDesc">Move camadas, seleções ou objetos</span></li>
+                    <li><strong data-i18n="gimpRotate">Rotação:</strong> <span data-i18n="gimpRotateDesc">Gira elementos</span></li>
+                    <li><strong data-i18n="gimpScale">Escala:</strong> <span data-i18n="gimpScaleDesc">Redimensiona elementos</span></li>
+                    <li><strong data-i18n="gimpShear">Cisalhamento:</strong> <span data-i18n="gimpShearDesc">Inclina elementos</span></li>
+                    <li><strong data-i18n="gimpPerspective">Perspectiva:</strong> <span data-i18n="gimpPerspectiveDesc">Ajusta a perspectiva de elementos</span></li>
+                    <li><strong data-i18n="gimpFlip">Espelhamento:</strong> <span data-i18n="gimpFlipDesc">Inverte horizontal ou verticalmente</span></li>
+                </ul>
+
+                <h3 data-i18n="gimpCorrectionTools">Ferramentas de Correção</h3>
+                <ul>
+                    <li><strong data-i18n="gimpClone">Clonagem:</strong> <span data-i18n="gimpCloneDesc">Duplica partes da imagem</span></li>
+                    <li><strong data-i18n="gimpHeal">Ferramenta de Cura:</strong> <span data-i18n="gimpHealDesc">Remove imperfeições mantendo textura</span></li>
+                    <li><strong data-i18n="gimpEraser">Borracha:</strong> <span data-i18n="gimpEraserDesc">Apaga pixels tornando transparente</span></li>
+                    <li><strong data-i18n="gimpBlurSharpen">Desfoque/Nitidez:</strong> <span data-i18n="gimpBlurSharpenDesc">Suaviza ou acentua detalhes</span></li>
+                    <li><strong data-i18n="gimpSmudge">Borrar:</strong> <span data-i18n="gimpSmudgeDesc">Mistura cores adjacentes</span></li>
+                    <li><strong data-i18n="gimpDodgeBurn">Clarear/Escurecer (Dodge/Burn):</strong> <span data-i18n="gimpDodgeBurnDesc">Ajusta exposição local</span></li>
+                </ul>
+
+                <h2 data-i18n="gimpLayers">Trabalhando com Camadas</h2>
+                <p data-i18n="gimpLayersDesc">As camadas são um dos conceitos mais importantes no GIMP. Elas permitem trabalhar em diferentes elementos de uma imagem separadamente.</p>
+
+                <h3 data-i18n="gimpLayerOperations">Operações com Camadas</h3>
+                <ul>
+                    <li><strong data-i18n="gimpNewLayer">Criar Nova Camada:</strong> <span data-i18n="gimpNewLayerDesc">Camada → Nova Camada</span></li>
+                    <li><strong data-i18n="gimpDuplicateLayer">Duplicar Camada:</strong> <span data-i18n="gimpDuplicateLayerDesc">Clique direito → Duplicar Camada</span></li>
+                    <li><strong data-i18n="gimpMergeLayers">Mesclar Camadas:</strong> <span data-i18n="gimpMergeLayersDesc">Combina duas ou mais camadas</span></li>
+                    <li><strong data-i18n="gimpOpacity">Opacidade:</strong> <span data-i18n="gimpOpacityDesc">Controla a transparência da camada</span></li>
+                    <li><strong data-i18n="gimpBlendModes">Modos de Mesclagem:</strong> <span data-i18n="gimpBlendModesDesc">Alteram como camadas interagem (Multiplicar, Sobrepor, etc.)</span></li>
+                    <li><strong data-i18n="gimpLayerMasks">Máscaras de Camada:</strong> <span data-i18n="gimpLayerMasksDesc">Controlam áreas visíveis/invisíveis sem destruir pixels</span></li>
+                </ul>
+
+                <h2 data-i18n="gimpBasics">Técnicas Básicas</h2>
+
+                <h3 data-i18n="gimpPhotoRetouching">Retoque de Fotos</h3>
+                <ol>
+                    <li><strong data-i18n="gimpColorCorrection">Correção de Cor:</strong> <span data-i18n="gimpColorCorrectionDesc">Cores → Auto → Equilíbrio de Branco</span></li>
+                    <li><strong data-i18n="gimpBrightnessContrast">Ajuste de Brilho/Contraste:</strong> <span data-i18n="gimpBrightnessContrastDesc">Cores → Brilho-Contraste</span></li>
+                    <li><strong data-i18n="gimpLevels">Níveis:</strong> <span data-i18n="gimpLevelsDesc">Cores → Níveis (ajuste preciso de tons)</span></li>
+                    <li><strong data-i18n="gimpCurves">Curvas:</strong> <span data-i18n="gimpCurvesDesc">Cores → Curvas (controle total sobre tons)</span></li>
+                    <li><strong data-i18n="gimpSaturation">Saturação:</strong> <span data-i18n="gimpSaturationDesc">Cores → Matiz-Saturação</span></li>
+                </ol>
+
+                <h3 data-i18n="gimpCroppingComposition">Recorte e Composição</h3>
+                <ol>
+                    <li data-i18n="gimpCroppingStep1">Use a <strong>Tesoura Inteligente</strong> para selecionar o objeto</li>
+                    <li data-i18n="gimpCroppingStep2">Refine a seleção com <strong>Selecionar → Aumentar/Diminuir</strong></li>
+                    <li data-i18n="gimpCroppingStep3">Use <strong>Selecionar → Suavizar</strong> para bordas suaves</li>
+                    <li data-i18n="gimpCroppingStep4">Copie (Ctrl+C) e cole (Ctrl+V) em nova camada</li>
+                    <li data-i18n="gimpCroppingStep5">Ajuste com ferramentas de transformação</li>
+                </ol>
+
+                <h3 data-i18n="gimpTextCreation">Criação de Texto</h3>
+                <ul>
+                    <li data-i18n="gimpTextStep1">Selecione a <strong>Ferramenta de Texto (T)</strong></li>
+                    <li data-i18n="gimpTextStep2">Clique na imagem e digite o texto</li>
+                    <li data-i18n="gimpTextStep3">Ajuste fonte, tamanho e cor no painel de opções</li>
+                    <li data-i18n="gimpTextStep4">Use <strong>Camada → Texto para Caminho</strong> para efeitos avançados</li>
+                    <li data-i18n="gimpTextStep5">Aplique efeitos com <strong>Filtros → Luz e Sombra</strong></li>
+                </ul>
+
+                <h2 data-i18n="gimpFilters">Filtros e Efeitos</h2>
+                <p data-i18n="gimpFiltersDesc">O GIMP oferece uma vasta biblioteca de filtros para criar efeitos visuais:</p>
+
+                <h3 data-i18n="gimpMostUsedFilters">Filtros Mais Usados</h3>
+                <ul>
+                    <li><strong data-i18n="gimpGaussianBlur">Desfoque Gaussiano:</strong> <span data-i18n="gimpGaussianBlurDesc">Filtros → Desfocar → Desfoque Gaussiano</span></li>
+                    <li><strong data-i18n="gimpSharpen">Nitidez:</strong> <span data-i18n="gimpSharpenDesc">Filtros → Realçar → Nitidez</span></li>
+                    <li><strong data-i18n="gimpDropShadow">Sombra Projetada:</strong> <span data-i18n="gimpDropShadowDesc">Filtros → Luz e Sombra → Sombra Projetada</span></li>
+                    <li><strong data-i18n="gimpBevelEmboss">Bevel e Emboss:</strong> <span data-i18n="gimpBevelEmbossDesc">Filtros → Luz e Sombra → Bevel e Emboss</span></li>
+                    <li><strong data-i18n="gimpDistortions">Distorções:</strong> <span data-i18n="gimpDistortionsDesc">Filtros → Distorções (vários efeitos)</span></li>
+                    <li><strong data-i18n="gimpArtistic">Artísticos:</strong> <span data-i18n="gimpArtisticDesc">Filtros → Artístico (óleo, aquarela, cartoon)</span></li>
+                </ul>
+
+                <h2 data-i18n="gimpShortcuts">Atalhos de Teclado Essenciais</h2>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <thead>
+                            <tr style="background-color: var(--cor-primaria); color: white;">
+                                <th style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcutHeader">Atalho</th>
+                                <th style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpFunctionHeader">Função</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + N</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut1">Nova Imagem</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + O</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut2">Abrir Imagem</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + S</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut3">Salvar</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + Shift + E</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut4">Exportar Como</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + Z</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut5">Desfazer</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + Y</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut6">Refazer</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + C</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut7">Copiar</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + V</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut8">Colar</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + A</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut9">Selecionar Tudo</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ctrl + Shift + A</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut10">Deselecionar</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>R</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut11">Seleção Retangular</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>E</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut12">Seleção Elíptica</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>P</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut13">Pincel</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>C</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut14">Clonagem</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>M</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut15">Mover</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>T</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;" data-i18n="gimpShortcut16">Texto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 data-i18n="gimpTips">Dicas e Boas Práticas</h2>
+                <ul>
+                    <li data-i18n="gimpTip1"><strong>Trabalhe Sempre com Camadas:</strong> Facilita edições futuras</li>
+                    <li data-i18n="gimpTip2"><strong>Salve Regularmente:</strong> Use Ctrl+S frequentemente</li>
+                    <li data-i18n="gimpTip3"><strong>Use Formato XCF:</strong> Formato nativo do GIMP que preserva camadas</li>
+                    <li data-i18n="gimpTip4"><strong>Exporte para Web:</strong> Use JPG (fotos) ou PNG (gráficos com transparência)</li>
+                    <li data-i18n="gimpTip5"><strong>Mantenha Cópias:</strong> Duplique a camada antes de aplicar efeitos destrutivos</li>
+                    <li data-i18n="gimpTip6"><strong>Use Máscaras:</strong> Em vez de apagar pixels permanentemente</li>
+                    <li data-i18n="gimpTip7"><strong>Organize Camadas:</strong> Dê nomes descritivos às camadas</li>
+                    <li data-i18n="gimpTip8"><strong>Aprenda Atalhos:</strong> Aumenta significativamente a produtividade</li>
+                </ul>
+
+                <h2 data-i18n="gimpResources">Recursos e Aprendizagem</h2>
+                <ul>
+                    <li><strong data-i18n="gimpOfficialDocs">Documentação Oficial:</strong> <a href="https://docs.gimp.org/" target="_blank" rel="noopener noreferrer" data-i18n="gimpOfficialDocsLink">docs.gimp.org</a></li>
+                    <li data-i18n="gimpTutorials"><strong>Tutoriais:</strong> YouTube tem milhares de tutoriais gratuitos</li>
+                    <li data-i18n="gimpForums"><strong>Fóruns:</strong> Comunidade ativa para tirar dúvidas</li>
+                    <li data-i18n="gimpPlugins"><strong>Plugins:</strong> Expanda funcionalidades com plugins adicionais</li>
+                    <li data-i18n="gimpResources2"><strong>Pincéis e Recursos:</strong> Sites como DeviantArt oferecem recursos gratuitos</li>
+                </ul>
+
+                <h2 data-i18n="gimpExercisesIntermediate">Exercícios Práticos - Nível Intermédio</h2>
+
+                <h3 data-i18n="gimpEx1">Exercício 1: Remover Fundo</h3>
+                <p><strong data-i18n="gimpExObjective">Objetivo:</strong> <span data-i18n="gimpEx1Obj">Aprender a remover o fundo de uma imagem usando a varinha mágica</span></p>
+                
+                <h4 data-i18n="gimpStepByStep">Passo a Passo:</h4>
+                <p><strong data-i18n="gimpBeforeStart">Antes de começar:</strong></p>
+                <ol>
+                    <li data-i18n="gimpEx1BeforeStep1">No lado direito onde temos a imagem, clicar com o botão direito do rato</li>
+                    <li data-i18n="gimpEx1BeforeStep2">Escolher a opção <strong>"Adicionar Camada Alfa"</strong></li>
+                </ol>
+
+                <p><strong data-i18n="gimpProcedure">Procedimento:</strong></p>
+                <ol>
+                    <li data-i18n="gimpEx1Step1"><strong>Pegar na ferramenta varinha mágica</strong> (Ferramentas → Ferramentas de Seleção → Seleção por Cor)</li>
+                    <li data-i18n="gimpEx1Step2"><strong>No lado esquerdo ter a primeira, segunda e última opção selecionadas</strong>
+                        <ul>
+                            <li data-i18n="gimpEx1Step2a">Primeira opção: Substituir a seleção atual</li>
+                            <li data-i18n="gimpEx1Step2b">Segunda opção: Adicionar à seleção atual</li>
+                            <li data-i18n="gimpEx1Step2c">Última opção: Suavizar bordas</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx1Step3"><strong>Selecionar a parte que queremos eliminar</strong> (clicar no fundo)</li>
+                    <li data-i18n="gimpEx1Step4"><strong>Clicar em "Delete"</strong> no teclado para remover o fundo selecionado</li>
+                </ol>
+
+                <h3 data-i18n="gimpEx2">Exercício 2: Adicionar Homem a Fundo</h3>
+                <p><strong data-i18n="gimpExObjective">Objetivo:</strong> <span data-i18n="gimpEx2Obj">Mudar o fundo de uma pessoa para criar uma composição nova</span></p>
+                
+                <h4 data-i18n="gimpStepByStep">Passo a Passo:</h4>
+                <ol>
+                    <li data-i18n="gimpEx2Step1"><strong>Usar o que aprendemos no exercício 1</strong> para remover o fundo do homem mas com a nova imagem de fundo
+                        <ul>
+                            <li data-i18n="gimpEx2Step1a">Abrir a imagem do homem</li>
+                            <li data-i18n="gimpEx2Step1b">Adicionar Camada Alfa</li>
+                            <li data-i18n="gimpEx2Step1c">Usar varinha mágica para selecionar e remover o fundo</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx2Step2"><strong>Abrir a imagem do novo fundo</strong> (por exemplo, pôr do sol)</li>
+                    <li data-i18n="gimpEx2Step3"><strong>Copiar a imagem do homem sem fundo</strong> e colar na imagem do novo fundo</li>
+                    <li data-i18n="gimpEx2Step4"><strong>Com a Opção "Mover"</strong> podemos mover a imagem do homem para deixar na posição que queremos
+                        <ul>
+                            <li data-i18n="gimpEx2Step4a">Ferramenta Mover (tecla M)</li>
+                            <li data-i18n="gimpEx2Step4b">Ajustar posição e tamanho se necessário</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h3 data-i18n="gimpEx3">Exercício 3: Remover Copo</h3>
+                <p><strong data-i18n="gimpExObjective">Objetivo:</strong> <span data-i18n="gimpEx3Obj">Remover objetos de uma imagem usando a ferramenta de clonagem</span></p>
+                
+                <h4 data-i18n="gimpStepByStep">Passo a Passo:</h4>
+                <ol>
+                    <li data-i18n="gimpEx3Step1"><strong>Pegar na ferramenta "Clonar em perspectiva"</strong> (ou Ferramenta de Clonagem - tecla C)
+                        <ul>
+                            <li data-i18n="gimpEx3Step1a">Ferramentas → Ferramentas de Pintura → Clonar</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx3Step2"><strong>Selecionar o tamanho que queremos</strong> na parte da esquerda
+                        <ul>
+                            <li data-i18n="gimpEx3Step2a">Ajustar o tamanho do pincel nas opções da ferramenta</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx3Step3"><strong>Clicamos no Botão "CTRL"</strong> e clicamos na imagem onde queremos copiar
+                        <ul>
+                            <li data-i18n="gimpEx3Step3a">Esta é a área fonte que será clonada</li>
+                            <li data-i18n="gimpEx3Step3b">Escolher uma área de areia limpa perto do copo</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx3Step4"><strong>Basta passar o rato por cima do copo</strong>
+                        <ul>
+                            <li data-i18n="gimpEx3Step4a">Pintar sobre o copo com pequenos toques</li>
+                            <li data-i18n="gimpEx3Step4b">Mudar a fonte frequentemente (Ctrl+Clique) para variedade de textura</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2 data-i18n="gimpExercisesAdvanced">Exercícios Práticos - Nível Avançado</h2>
+
+                <h3 data-i18n="gimpEx4">Exercício 4: Criar Efeito com Número e Jogador</h3>
+                <p><strong data-i18n="gimpExObjective">Objetivo:</strong> <span data-i18n="gimpEx4Obj">Criar uma composição onde o jogador interage com um número grande, criando um efeito de profundidade</span></p>
+                
+                <h4 data-i18n="gimpStepByStep">Passo a Passo:</h4>
+                <ol>
+                    <li data-i18n="gimpEx4Step1"><strong>Adicionar a imagem do jogador e Criar um fundo</strong>
+                        <ul>
+                            <li data-i18n="gimpEx4Step1a">Abrir imagem do jogador de futebol</li>
+                            <li data-i18n="gimpEx4Step1b">Criar ou adicionar uma imagem de fundo (textura de concreto)</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx4Step2"><strong>Adicionar um número à nossa escolha</strong> e metemos na posição que queremos
+                        <ul>
+                            <li data-i18n="gimpEx4Step2a">Ferramenta de Texto (T)</li>
+                            <li data-i18n="gimpEx4Step2b">Digite o número (ex: "5")</li>
+                            <li data-i18n="gimpEx4Step2c">Fonte grande e bold</li>
+                            <li data-i18n="gimpEx4Step2d">Posicionar no centro</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx4Step3"><strong>Duplicamos a foto do Jogador</strong> e metemos em cima
+                        <ul>
+                            <li data-i18n="gimpEx4Step3a">Clique direito na camada do jogador → Duplicar Camada</li>
+                            <li data-i18n="gimpEx4Step3b">Mover camada duplicada para cima de todas as outras</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx4Step4"><strong>Na camada do número</strong> clicamos com o lado direito e clicamos em <strong>"Adicionar canal para seleção"</strong>
+                        <ul>
+                            <li data-i18n="gimpEx4Step4a">Isto cria uma seleção na forma do número</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx4Step5"><strong>Na foto duplicada do jogador</strong> clicamos com o lado direito do rato e metemos a opção <strong>"Adicionar Canal de Máscara"</strong> e em seguida clicamos em <strong>"Seleção"</strong>
+                        <ul>
+                            <li data-i18n="gimpEx4Step5a">Isto faz com que o jogador apareça apenas dentro da forma do número</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx4Step6"><strong>Clicamos em "CTRL + SHIFT + A"</strong> e selecionamos a ferramenta da borracha
+                        <ul>
+                            <li data-i18n="gimpEx4Step6a">Este atalho deseleciona tudo</li>
+                            <li data-i18n="gimpEx4Step6b">Selecionar Ferramenta Borracha</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx4Step7"><strong>Clicamos na foto original do jogador</strong> (a de baixo) e apagamos o que queremos para dar esse efeito diferente
+                        <ul>
+                            <li data-i18n="gimpEx4Step7a">Apagar partes do jogador que queremos que "saiam" do número</li>
+                            <li data-i18n="gimpEx4Step7b">Isto cria o efeito de profundidade, onde o jogador parece estar parcialmente atrás e parcialmente à frente do número</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h3 data-i18n="gimpEx5">Exercício 5: Criar Efeito de Luz</h3>
+                <p><strong data-i18n="gimpExObjective">Objetivo:</strong> <span data-i18n="gimpEx5Obj">Criar feixes de luz realistas usando a ferramenta de caminhos</span></p>
+                
+                <h4 data-i18n="gimpStepByStep">Passo a Passo:</h4>
+                <ol>
+                    <li data-i18n="gimpEx5Step1"><strong>Vamos criar uma camada por cima da imagem</strong>
+                        <ul>
+                            <li data-i18n="gimpEx5Step1a">Camada → Nova Camada</li>
+                            <li data-i18n="gimpEx5Step1b">Escolher transparente</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx5Step2"><strong>Vamos selecionar a Ferramenta chamada "Caminhos"</strong>
+                        <ul>
+                            <li data-i18n="gimpEx5Step2a">Ferramentas → Ferramentas de Caminhos → Caminhos (tecla B)</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx5Step3"><strong>Selecionamos o caminho que queremos que a luz faça</strong>, juntamos esse caminho enquanto clicamos na tecla "CTRL" e depois de tudo feito clicamos no Botão "ENTER"
+                        <ul>
+                            <li data-i18n="gimpEx5Step3a">Clicar para criar pontos ao longo do caminho da luz</li>
+                            <li data-i18n="gimpEx5Step3b">Manter CTRL pressionado para conectar o caminho</li>
+                            <li data-i18n="gimpEx5Step3c">Pressionar ENTER para converter o caminho em seleção</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx5Step4"><strong>Pintamos o Vetor que criamos de branco</strong>
+                        <ul>
+                            <li data-i18n="gimpEx5Step4a">Selecionar cor branca</li>
+                            <li data-i18n="gimpEx5Step4b">Usar Balde de Preenchimento ou Pincel para preencher a seleção</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx5Step5"><strong>Clicamos em "filtros", "Desfocar" e depois em "desfocagem gaussiana"</strong> e mexemos no Tamanho X e Tamanho Y até acharmos que faz um efeito bom e realista de luz
+                        <ul>
+                            <li data-i18n="gimpEx5Step5a">Filtros → Desfocar → Desfocagem Gaussiana</li>
+                            <li data-i18n="gimpEx5Step5b">Ajustar valores (ex: 20-50 pixels) para criar efeito suave de luz</li>
+                            <li data-i18n="gimpEx5Step5c">Experimentar até obter resultado desejado</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx5Step6"><strong>Ajustar opacidade</strong> da camada de luz se necessário (opcional)</li>
+                </ol>
+
+                <h3 data-i18n="gimpEx6">Exercício 6: Criar Efeito com Texto e Homem</h3>
+                <p><strong data-i18n="gimpExObjective">Objetivo:</strong> <span data-i18n="gimpEx6Obj">Criar composição onde pessoa interage com texto grande, parecendo estar parcialmente atrás das letras</span></p>
+                
+                <h4 data-i18n="gimpStepByStep">Passo a Passo:</h4>
+                <ol>
+                    <li data-i18n="gimpEx6Step1"><strong>Vamos pegar na imagem do senhor, remover o fundo</strong> como fizemos nos outros exercícios
+                        <ul>
+                            <li data-i18n="gimpEx6Step1a">Usar técnica do Exercício 1 (varinha mágica)</li>
+                            <li data-i18n="gimpEx6Step1b">Adicionar Camada Alfa</li>
+                            <li data-i18n="gimpEx6Step1c">Remover fundo completamente</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx6Step2"><strong>Metemos o fundo como Amarelo</strong>
+                        <ul>
+                            <li data-i18n="gimpEx6Step2a">Criar nova camada de fundo</li>
+                            <li data-i18n="gimpEx6Step2b">Preencher com cor amarela vibrante</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx6Step3"><strong>Criamos a frase que quisermos</strong> e posicionamos no sítio
+                        <ul>
+                            <li data-i18n="gimpEx6Step3a">Ferramenta de Texto (T)</li>
+                            <li data-i18n="gimpEx6Step3b">Escrever "music show" (ou outro texto)</li>
+                            <li data-i18n="gimpEx6Step3c">Fonte grande e bold, cor branca</li>
+                            <li data-i18n="gimpEx6Step3d">Posicionar no centro/topo</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx6Step4"><strong>Duplicamos a foto do homem</strong> e metemos a original em baixo do texto e a duplicada em cima
+                        <ul>
+                            <li data-i18n="gimpEx6Step4a">Clique direito na camada do homem → Duplicar</li>
+                            <li data-i18n="gimpEx6Step4b">Organizar camadas: Fundo → Homem original → Texto → Homem duplicado</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx6Step5"><strong>Na Camada da frase</strong> clicamos com o lado direito e escolhemos a opção <strong>"Canal alfa para seleção"</strong>
+                        <ul>
+                            <li data-i18n="gimpEx6Step5a">Isto cria uma seleção na forma das letras</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx6Step6"><strong>Na camada de cima do homem</strong> clicamos com o lado direito e escolhemos a opção <strong>"Adicionar Máscara de Camadas"</strong> e escolher a opção de seleção
+                        <ul>
+                            <li data-i18n="gimpEx6Step6a">Camada → Máscara → Adicionar Máscara de Camada</li>
+                            <li data-i18n="gimpEx6Step6b">Selecionar opção "Seleção"</li>
+                            <li data-i18n="gimpEx6Step6c">Isto faz o homem aparecer apenas dentro das letras</li>
+                        </ul>
+                    </li>
+                    <li data-i18n="gimpEx6Step7"><strong>Em seguida pegamos na opção da borracha</strong> e apagamos na parte das letras para dar aquele efeito
+                        <ul>
+                            <li data-i18n="gimpEx6Step7a">Selecionar Ferramenta Borracha</li>
+                            <li data-i18n="gimpEx6Step7b">Trabalhar na camada do homem original (a de baixo)</li>
+                            <li data-i18n="gimpEx6Step7c">Apagar partes do homem que queremos que apareçam "dentro" das letras</li>
+                            <li data-i18n="gimpEx6Step7d">Isto cria o efeito onde o homem está parcialmente atrás e parcialmente à frente do texto</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p><strong data-i18n="gimpAuthor">Autor:</strong> <span data-i18n="gimpAuthorName">Guilherme Rodrigues</span></p>
+                <a href="../../index.html" class="btn-voltar" data-i18n="btnBackHome">← Voltar para Início</a>
+            </article>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>Contato: <a href="mailto:a22405041@mso365.ipluso.pt">Guilherme Rodrigues</a></p>
+        <p><a href="acessibilidade.html" accesskey="a" title="Alt+A: Acessibilidade">Declaração de Acessibilidade</a></p>
+    </footer>
+
+    <script src="../js/accessibility.js"></script>
+    <script src="../js/translator.js"></script>
+    <script src="../js/auto-translator.js"></script>
+</body>
+</html>

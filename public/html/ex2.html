@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apresentação 02 - Design de Interfaces - Guilherme Rodrigues">
+    <title>Apresentação 02 - Design de Interfaces</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/translation.css">
+</head>
+<body>
+    <a href="../../index.html" class="skip-link" data-i18n="skipLink">Pular para o conteúdo principal</a>
+    
+   <header role="banner">
+        <div class="header-container">
+            <div class="logo">
+                <a href="../../index.html" class="logo-link" title="Ir para a home">
+                    <img src="../img/DWDM_claro.webp" alt="DWDM" class="logo-image logo-claro" />
+                    <img src="../img/DWDM_escuro.webp" alt="DWDM" class="logo-image logo-escuro" />
+                </a>
+            </div>
+            <button class="hamburger-btn" aria-label="Menu" aria-expanded="false" title="Abrir/fechar menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav role="navigation" aria-label="Menu principal" class="main-nav">
+                <ul>
+                    <li><a href="../../index.html" title="Início" data-i18n="navHome">Início</a></li>
+                    <li><a href="../../index.html#materias" title="Matérias" data-i18n="navSubjects">Matérias</a></li>
+                    <li><a href="about.html" title="Sobre Nós" data-i18n="navAbout">Sobre Nós</a></li>
+                </ul>
+                <div class="mobile-controls">
+                    <div class="header-actions" id="header-actions-mobile">
+                        <button class="modo-noturno" aria-label="Alternar modo noturno" title="Alternar modo noturno">🌙 Modo Noturno</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-actions desktop-only" id="header-actions-desktop">
+                <button class="modo-noturno" aria-label="Alternar modo noturno" title="Alternar modo noturno">🌙 Modo Noturno</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main" tabindex="-1">
+        <section class="conteudo">
+            <div class="conteudo-header">
+                <h1 data-i18n="ex2Title">Design de Interfaces: Composição e Cor</h1>
+                <div class="conteudo-buttons-right">
+                    <a href="../pdf/EX2.zip" download class="btn-download-pdf" aria-label="Baixar PDF da apresentação">
+                        <span>⬇</span> <span data-i18n="btnDownloadPdf">Baixar PDF</span>
+                    </a>
+                    <button class="btn-audio" id="audioBtn" aria-label="Ler página em áudio" title="Ler página em áudio">
+                        <span>🔊</span> <span data-i18n="btnAudio">Ler em Áudio</span>
+                    </button>
+                </div>
+            </div>
+
+            <article>
+                <h2 data-i18n="ex2UIvsUX">UI vs UX</h2>
+                <p data-i18n="ex2UIvsUXDesc">É fundamental compreender a diferença entre estes dois conceitos base do design digital:</p>
+                <ul>
+                    <li><strong>UI (User Interface):</strong> <span data-i18n="ex2UIDef">É a camada visual e interativa através da qual o utilizador interage com o produto digital, como um site ou aplicação.</span></li>
+                    <li><strong>UX (User Experience):</strong> <span data-i18n="ex2UXDef">Refere-se à experiência geral de uma pessoa ao interagir com um produto, serviço ou sistema.</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 data-i18n="ex2CompositionPrinciples">Princípios de Composição Visual</h2>
+                <p data-i18n="ex2CompositionDesc">O equilíbrio, o contraste e o alinhamento são a base de qualquer interface bem-sucedida. Sem eles, o utilizador pode enfrentar confusão visual e dificuldade em executar tarefas.</p>
+                
+                <h3 data-i18n="ex2Balance">O Equilíbrio</h3>
+                <p data-i18n="ex2BalanceDistribute">Distribui o peso visual dos elementos na interface:</p>
+                <ul>
+                    <li><strong data-i18n="ex2SymmetricBalance">Equilíbrio Simétrico:</strong> <span data-i18n="ex2SymmetricBalanceDesc">Elementos distribuídos igualmente em ambos os lados de um eixo central, criando um visual estável.</span></li>
+                    <li><strong data-i18n="ex2AsymmetricBalance">Equilíbrio Assimétrico:</strong> <span data-i18n="ex2AsymmetricBalanceDesc">Pesos visuais diferentes usados de forma desigual, mas estável, criando uma sensação mais dinâmica.</span></li>
+                </ul>
+
+                <h3 data-i18n="ex2Contrast">O Contraste</h3>
+                <p data-i18n="ex2ContrastDesc">Destaca elementos importantes e ajuda na hierarquia visual, guiando o utilizador para botões de ação e títulos através de cores vibrantes ou tipografia diferente.</p>
+
+                <h3 data-i18n="ex2Alignment">O Alinhamento</h3>
+                <p data-i18n="ex2AlignmentDesc">Organiza os elementos para criar uma sensação de ordem, unidade e consistência, evitando um aspeto desordenado e facilitando a compreensão.</p>
+            </article>
+
+            <article>
+                <h2 data-i18n="ex2Grids">Grids e Malhas</h2>
+                <p data-i18n="ex2GridsDesc">Essenciais para organizar o conteúdo e garantir a consistência visual em diferentes dispositivos e ecrãs.</p>
+                <ul>
+                    <li><strong data-i18n="ex2Grids1">Grids:</strong> <span data-i18n="ex2GridsDesc1">Estrutura de linhas verticais e horizontais que definem a disposição do conteúdo.</span></li>
+                    <li><strong data-i18n="ex2Grids2">Malhas (Grid System):</strong> <span data-i18n="ex2GridsDesc2">Sistema espacial e lógico que governa o layout para garantir a consistência responsiva.</span></li>
+                    <li><strong data-i18n="ex2Grids3">Grid de 8 Pontos:</strong> <span data-i18n="ex2GridsDesc3">Convenção popular que utiliza múltiplos de 8 para definir o espaçamento e tamanho dos elementos.</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 data-i18n="ex2ColorTheory">Teoria das Cores</h2>
+                <p data-i18n="ex2ColorTheoryDesc">Estudo sobre a natureza das cores e a sua influência na percepção e psicologia do ser humano.</p>
+                
+                <h3 data-i18n="ex2Harmonies">Harmonias:</h3>
+                <ul>
+                    <li><strong data-i18n="ex2Complementary">Cores Complementares:</strong> <span data-i18n="ex2ComplementaryDesc">Proporcionam alto contraste entre cores opostas.</span></li>
+                    <li><strong data-i18n="ex2Analogous">Cores Análogas:</strong> <span data-i18n="ex2AnalogousDesc">Combinação de três cores consecutivas no círculo cromático.</span></li>
+                    <li><strong data-i18n="ex2Monochrome">Monocromia:</strong> <span data-i18n="ex2MonochromeDesc">Uso da mesma cor alterando apenas a tonalidade, saturação e brilho.</span></li>
+                </ul>
+
+                <h3 data-i18n="ex2Psychology">Psicologia das Cores:</h3>
+                <ul>
+                    <li><strong data-i18n="ex2Blue">Azul:</strong> <span data-i18n="ex2BlueDesc">Transmite confiança, segurança e profissionalismo.</span></li>
+                    <li><strong data-i18n="ex2Red">Vermelho:</strong> <span data-i18n="ex2RedDesc">Indica paixão, energia e urgência.</span></li>
+                    <li><strong data-i18n="ex2Green">Verde:</strong> <span data-i18n="ex2GreenDesc">Associado à natureza e crescimento.</span></li>
+                    <li><strong data-i18n="ex2Yellow">Amarelo:</strong> <span data-i18n="ex2YellowDesc">Transmite otimismo, criatividade e felicidade.</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 data-i18n="ex2Accessibility">Acessibilidade (WCAG)</h2>
+                <p data-i18n="ex2AccessibilityDesc">As diretrizes para o uso correto de cores focam-se no contraste e na redundância da informação.</p>
+                <ul>
+                    <li><strong data-i18n="ex2MinimumContrast">Contraste Mínimo:</strong> <span data-i18n="ex2MinimumContrastDesc">Garantia de 4.5:1 para texto normal e 3:1 para texto grande ou elementos de interface.</span></li>
+                    <li><strong data-i18n="ex2VisualRedundancy">Redundância Visual:</strong> <span data-i18n="ex2VisualRedundancyDesc">A cor não deve ser o único meio de transmitir informação. Devem usar-se ícones ou sublinhados para distinguir elementos.</span></li>
+                </ul>
+            </article>
+
+            <p><strong data-i18n="ex2Author">Autor:</strong> Guilherme Rodrigues (a22405041)</p>
+            <a href="../../index.html" class="btn-voltar" data-i18n="btnBackHome">← Voltar para Início</a>
+
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p><span data-i18n="footerContact">Contato</span>: <a href="mailto:a22405041@mso365.ipluso.pt">Guilherme Rodrigues</a></p>
+        <p><a href="acessibilidade.html" data-i18n="footerAccessibility">Declaração de Acessibilidade</a></p>
+    </footer>
+
+    <script src="../js/accessibility.js"></script>
+    <script src="../js/translator.js"></script>
+    <script src="../js/auto-translator.js"></script>
+</body>
+</html>
